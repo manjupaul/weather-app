@@ -14,7 +14,7 @@ weatherApp.controller('forecastController',['$scope', '$resource', 'cityService'
 
     $scope.weatherAPI =
         $resource("http://api.openweathermap.org/data/2.5/forecast/daily", {callback :"JSON_CALLBACK"},{ get:{method:"JSONP"}});
-    $scope.weatherResult = $scope.weatherAPI.get({q: $scope.city, cnt: 2, APPID: 'xxxxxxxxx'});
+    $scope.weatherResult = $scope.weatherAPI.get({q: $scope.city, cnt: 2, APPID: 'xxxxxxxxxxxxxxxx'});
 
     //covert to farenheit
     $scope.convertToFarenheit = function(degK){
