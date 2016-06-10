@@ -12,5 +12,10 @@ weatherApp.config(function ($routeProvider) {
             templateUrl: 'pages/forecast.html',
             controller: 'forecastController'
         })
+//
+        .when('/forecast/:days', {
+            templateUrl: 'pages/forecast.html',
+            controller: 'forecastController'
+        })
 
 });
